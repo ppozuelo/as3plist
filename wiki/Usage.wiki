@@ -1,4 +1,4 @@
-#summary about PlistElement class
+#summary detail with PlistElement
 
 =Access Plist Node Value=
 
