@@ -1,7 +1,8 @@
 #summary about PlistElement class
 
-= Easy Access =
-== get value ==
+=Access Plist Node Value=
+
+== Get value ==
 Use 'parent dot child' to reach parent's child element.
 {{{
 trace(plist.root.false_key); //false
@@ -19,7 +20,7 @@ trace(plist.root.false_key.xml); //false_key (toString() works silently)
 trace(plist.root.false_key.xml.toXMLString()); //<key>false_key</key>
 }}}
 
-==.object property==
+==Use .object property==
 Reserved word 'object' is useful to view whole object created from XML.
 
 parsed from XML below.
@@ -35,6 +36,15 @@ sample using .object property
 trace(plist.root.arr_key); //11111,22222
 trace(plist.root.arr_key[0]); //11111
 trace(plist.root.arr_key.object); //11111,22222
+}}}
+
+=Node Exists or not?=
+Now all elements belong to PlistElement class and you can check their types using 'is'.
+{{{
+trace(plist.root.dic_key);
+trace(plist.root.dic_key is PlistElement);//true
+trace(plist.root.dic_key2);
+trace(plist.root.dic_key2 is PlistElement);//false
 }}}
 
 * sample.plst *
