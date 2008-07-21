@@ -8,8 +8,8 @@ trace(plist.root.false_key); //false
 == You want XMLList? ==
 Use reserved keyword named 'xml' to get its own XMLList object.
 {{{
-trace(plist.root.arr_key[0].xml);
-//<dict><key>arr_child_dic</key><string>null</string></dict>
+trace(plist.root.arr_key[0]); // null
+trace(plist.root.arr_key[0].xml); //<dict><key>arr_child_dic</key><string>null</string></dict>
 }}}
 You should use toXMLString() for no collective types because they will be converted to string automatically.
 {{{
