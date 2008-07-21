@@ -1,3 +1,5 @@
+#summary about PlistElement class
+
 = Easy Access =
 == get value ==
 Use 'parent dot child' to reach parent's child element.
