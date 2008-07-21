@@ -7,9 +7,11 @@ This is a small library to use plist files for flash contents.
 
 Features list
 
-* XML based property list support
-* plist 1.0 support
-* access properties directly using dot syntax
+  *  XML based property list support
+
+  *  plist 1.0 support
+
+  *  access properties directly using dot syntax
 
 
 =Usage=
