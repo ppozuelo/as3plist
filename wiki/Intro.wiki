@@ -1,4 +1,4 @@
-#summary features and usage
+#summary features and getting started
 = Introduction =
 
 This is a small library to use plist files for flash contents.
@@ -15,7 +15,7 @@ Features list
   *  access properties directly using dot syntax
 
 
-=Usage=
+=Getting Started=
 
 1. load plist file with URLLoader and prepare to capture event from URLLoader.
 {{{
