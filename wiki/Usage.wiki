@@ -39,12 +39,19 @@ trace(plist.root.arr_key.object); //11111,22222
 }}}
 
 =Node Exists or not?=
-Now all elements belong to PlistElement class and you can check their types using 'is'.
+All elements are derived from PlistElement class and you can check if they exists or not using 'is'.
 {{{
 trace(plist.root.dic_key);
 trace(plist.root.dic_key is PlistElement);//true
 trace(plist.root.dic_key2);
 trace(plist.root.dic_key2 is PlistElement);//false
+}}}
+
+=Type of nodes=
+You should check the type of object property of node when you want to know the type of node.
+{{{
+trace(plist.root.arr_key is Array); //false
+trace(plist.root.arr_key.object is Array); //true
 }}}
 
 * sample.plst *
