@@ -14,6 +14,8 @@ Features list
 
   *  access properties directly using dot syntax
 
+  *  Binary based property list support (tentative)
+
 
 =Getting Started=
 
@@ -31,6 +33,16 @@ private function onComplete(e:Event):void
 {
 	var plist:Plist10=new Plist10();
 	plist.parse(e.target.data);
+	
+}
+}}}
+==For Binary Format==
+Invoke getXML method before parse loaded data within onComplete method.
+{{{
+private function onComplete(e:Event):void
+{
+	var plist:Plist10=new Plist10();
+	plist.parse(Bin2Xml.getXML(e.target.data));
 	
 }
 }}}
