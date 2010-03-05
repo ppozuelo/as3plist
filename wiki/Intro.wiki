@@ -39,6 +39,14 @@ private function onComplete(e:Event):void
 ==For Binary Format==
 Invoke getXML method before parse loaded data within onComplete method.
 {{{
+public function init():void
+{
+	var loader:URLLoader=new URLLoader(new URLRequest("sample_bin.plist"));
+	loader.dataFormat = URLLoaderDataFormat.BINARY;
+	loader.addEventListener(Event.COMPLETE, onComplete);
+}
+}}}
+{{{
 private function onComplete(e:Event):void
 {
 	var plist:Plist10=new Plist10();
